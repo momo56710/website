@@ -24,21 +24,19 @@ const item = {
 
 export default function Hero() {
   return (
-    <Center>
-      <Box height={'100vh'} display={'grid'} justifyItems={'center'} alignItems={'center'}>
-        <motion.ul
-          className="container"
-          variants={container}
-          initial="hidden"
-          animate="visible"
-        >
-          {['Learn', 'evolve', 'proceed', 'succeed'].map(index => (
-            <motion.li key={index} className="item" variants={item} >
-                {index}
-            </motion.li>
-          ))}
-        </motion.ul>
-      </Box>
-    </Center>
+    <div className='hero'>
+      <motion.ul
+        className="container"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
+        {['Learn', 'evolve', 'proceed', 'succeed'].map(index => (
+          <motion.li key={index} className="item" variants={item}>
+            {index}
+          </motion.li>
+        ))}
+      </motion.ul>
+    </div>
   );
 }

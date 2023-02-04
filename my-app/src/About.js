@@ -9,17 +9,16 @@ import {
 export default function CallToActionWithAnnotation() {
   return (
     <>
-      <Container maxW={'3xl'}>
+      <Container h={'100vh'} display={'grid'} alignItems={'center'} maxW={'3xl'}>
         <Stack
           as={Box}
-          textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 5, md: 10 }}
         >
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}
+            
           >
             About <br />
             <Text as={'span'} color={'green.400'}>
@@ -38,14 +37,6 @@ export default function CallToActionWithAnnotation() {
             events we organize, aiming to help the developers community get the
             latest technology updates.
           </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}
-          >
-          </Stack>
         </Stack>
       </Container>
     </>
